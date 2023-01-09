@@ -16,6 +16,9 @@
 		},
 		"LS_adls_data_engineering_dl_properties_typeProperties_url": {
 			"value": "https://stdedatalakedev001vv.dfs.core.windows.net/"
+		},
+		"TRG_ingest_uploaded_files_properties_typeProperties_scope": {
+			"value": "/subscriptions/c59d2b12-dfcd-4e43-bb40-386bc0950b38/resourceGroups/rg-websevelopment-dev-001-vv/providers/Microsoft.Storage/storageAccounts/stwebstoredata001vv"
 		}
 	}
 }

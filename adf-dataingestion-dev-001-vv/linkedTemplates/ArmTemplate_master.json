@@ -23,6 +23,10 @@
 			"type": "string",
 			"defaultValue": "https://stdedatalakedev001vv.dfs.core.windows.net/"
 		},
+		"TRG_ingest_uploaded_files_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/c59d2b12-dfcd-4e43-bb40-386bc0950b38/resourceGroups/rg-websevelopment-dev-001-vv/providers/Microsoft.Storage/storageAccounts/stwebstoredata001vv"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -79,6 +83,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"TRG_ingest_uploaded_files_properties_typeProperties_scope": {
+						"value": "[parameters('TRG_ingest_uploaded_files_properties_typeProperties_scope')]"
 					}
 				}
 			},
