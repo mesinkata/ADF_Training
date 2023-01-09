@@ -39,6 +39,29 @@
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "Filter By Filetype",
+				"type": "Filter",
+				"dependsOn": [
+					{
+						"activity": "Get Container Metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('Get Container Metadata').output.childItems",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@endswith(item().name,concat('.',pipeline().parameters.fileType))",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
