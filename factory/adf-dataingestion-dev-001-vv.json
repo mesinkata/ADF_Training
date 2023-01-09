@@ -1,0 +1,9 @@
+{
+	"name": "adf-dataingestion-dev-001-vv",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "91522b58-fb88-4646-a627-13b9854edf01",
+		"tenantId": "14f32f73-039d-4e78-bcb7-c82390d38744"
+	}
+}
