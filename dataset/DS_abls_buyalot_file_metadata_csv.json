@@ -1,0 +1,31 @@
+{
+	"name": "DS_abls_buyalot_file_metadata_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_abls_buyalot_webstore",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "webstore"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "finance"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
