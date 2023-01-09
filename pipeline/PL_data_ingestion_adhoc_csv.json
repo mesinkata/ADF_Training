@@ -1,0 +1,32 @@
+{
+	"name": "PL_data_ingestion_adhoc_csv",
+	"properties": {
+		"description": "Ingest Event-driven(adhoc) csv files to the ada engineering datalake",
+		"activities": [
+			{
+				"name": "Get Container Metadata",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.00:10:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
+		"parameters": {
+			"sourceContainer": {
+				"type": "string",
+				"defaultValue": "finance"
+			},
+			"fileType": {
+				"type": "string",
+				"defaultValue": "csv"
+			}
+		},
+		"annotations": []
+	}
+}
